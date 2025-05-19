@@ -13,9 +13,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC6xPeBpqBt8XklcVA7OJouEGVATJhZQA"></script>
     <script>
       async function initMap() {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbx_Gbo2ZYkSvzEEaBCib__x97LTCaPy4jTnRZbvGL93JBuSBOxnnU0gutCUrmUwPg/exec');
+       const response = await fetch('https://script.google.com/macros/s/AKfycbx_Gbo2ZYkSvzEEaBCib__x97LTCaPy4jTnRZbvGL93JBuSBOxnnU0gutCUrmUwPg/exec');
         const data = await response.json();
-
         const colors = {};
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 12,
