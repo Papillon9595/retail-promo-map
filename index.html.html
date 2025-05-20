@@ -57,14 +57,18 @@
 }
 
 
+
     // Инициализация карты и загрузка данных
     function start() {
       initMap();
       loadData();
     }
 
-    window.onload = start;
-  </script>
+    window.onload = () => {
+  initMap();
+  loadData();
+}
+
 
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVFVIGgoqMAboYvz9bY3-Fhcb1MocV5Vk&callback=initMap">
