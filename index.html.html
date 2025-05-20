@@ -50,11 +50,12 @@
     }
 
     // Загружаем JSONP скрипт с callback=processData
-    function loadData() {
-      const script = document.createElement('script');
-      script.src = 'https://script.google.com/macros/s/AKfycbxv1TsyeDnKekEAIWndPF_eNhWHBUIkW2Jge0ni7T26S2BXmZ9aLgXmAlMLtmv1_H7f/exec?callback=processData';
-      document.body.appendChild(script);
-    }
+   function loadData() {
+  const script = document.createElement('script');
+  script.src = 'https://script.google.com/macros/s/AKfycbxv1TsyeDnKekEAIWndPF_eNhWHBUIkW2Jge0ni7T26S2BXmZ9aLgXmAlMLtmv1_H7f/exec?callback=processData';
+  document.body.appendChild(script);
+}
+
 
     // Инициализация карты и загрузка данных
     function start() {
